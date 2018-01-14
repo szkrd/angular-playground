@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TableOfContentsComponent } from './table-of-contents/table-of-contents.component';
 import { CounterComponent } from './counter/counter.component';
 import { CssColorSelectComponent } from './css-color-select/css-color-select.component';
+import { InputFilterDirective } from './input-filter.directive';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { CssColorSelectComponent } from './css-color-select/css-color-select.com
     AppComponent,
     TableOfContentsComponent,
     CounterComponent,
-    CssColorSelectComponent
+    CssColorSelectComponent,
+    InputFilterDirective
   ],
   imports: [
     BrowserModule,
