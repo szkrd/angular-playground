@@ -1,0 +1,44 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<app-counter></app-counter>
+
+<app-css-color-select
+  [color]="favoriteColor"
+  (color-change)="favoriteColor = $event"
+></app-css-color-select>
+<p>
+  Parent (app):
+  {{favoriteColor|json}}
+  <button (click)="favoriteColor = 'black'">boring color</button>
+  <button (click)="favoriteColor = 'fuchsia'">happy color</button>
+</p>
+
+<app-table-of-contents></app-table-of-contents>
+
+<hr>
+
+<div>
+  <p>
+    <span>{{</span>
+    plain stuff
+    <span>}}</span>
+  </p>
+  <p>
+    box: <em>[property] &laquo;-- value</em>
+  </p>
+  <p>
+    banana: <em>(event) --&raquo; handler</em>
+  </p>
+  <p>
+    banana in a box: <em>[(ngModel)] &laquo;--&raquo; property</em>
+    <br>
+    (needs the FormsModule!)
+  </p>
+  <p>
+    * builtin (*ngIf, *ngFor, *ngClass, *ngPlural, *ngStyle, *ngSwitch)
+  </p>
+</div>

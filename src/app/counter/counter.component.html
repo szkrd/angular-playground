@@ -1,0 +1,21 @@
+<div>
+  <div class="display">
+    <div class="meter" [style.width.%]="percent">
+      {{percent}}%
+    </div>
+  </div>
+  <div class="row">
+    <div class="cell">
+      <button (click)="onDecClick()">-</button>
+    </div>
+    <form class="cell">
+      <input type="number" [(ngModel)]="count" [ngModelOptions]="{standalone: true}" />
+    </form>
+    <div class="cell">
+      <button (click)="onIncClick()">+</button>
+    </div>
+  </div>
+  <!--
+  (ngModelOptions standalone is needed since the input is not in a form)
+  -->
+</div>

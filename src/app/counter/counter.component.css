@@ -1,0 +1,26 @@
+.row {
+  display: flex;
+}
+
+.cell {
+  flex: 0 1 auto;
+}
+
+input[type=number] {
+  width: 50px;
+}
+
+.display {
+  width: 300px;
+  height: 10px;
+  border: 1px solid silver;
+  border-radius: 2px;
+  margin-bottom: 5px;
+}
+
+.meter {
+  height: 10px;
+  background-color: salmon;
+  font-size: 10px;
+  line-height: 10px;
+}

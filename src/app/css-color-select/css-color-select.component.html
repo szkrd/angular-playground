@@ -1,0 +1,12 @@
+<div>
+  <select #selectElem (change)="selectedColor = selectElem.value">
+    <option
+      *ngFor="let color of colors"
+      [value]="color"
+      [attr.selected]="color==selectedColor ? true : null"
+    >
+      {{color}}
+    </option>
+  </select>
+  <div class="preview" [ngClass]="selectedColor"></div>
+</div>
